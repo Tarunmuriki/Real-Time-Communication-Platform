@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0B0F19] text-gray-200 antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom Premium Styles */
+
+/* Modern Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6366F1;
+}
+
+/* Glassmorphism Panel styles */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(17, 24, 39, 0.6);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.15);
+  transform: translateY(-2px);
+}
+
+/* High-tech glow pulse animation */
+.glow-indigo {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+}
+
+.glow-teal {
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.2);
+}
+
+/* Video grid resizing animation */
+.video-container {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
